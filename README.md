@@ -128,7 +128,7 @@ class MainActivity : ComponentActivity() {
             }
 
             override fun onFailure(call: Call<List<String>>, t: Throwable) {
-                Log.e("Retrofit", "API Request Fail: ${t.message}")
+                Log.e("Retrofit", "API Request Failure: ${t.message}")
             }
         })
 
