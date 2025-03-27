@@ -122,7 +122,10 @@ class MainActivity : ComponentActivity() {
                     val posts = response.body()
                     textView.text = posts.toString()
                     Log.d("Retrofit", "Response Success: $posts")
+                } else {
+                    Log.e("Retrofit", "Response Error: ${response.code()} - ${response.message()}")
                 }
+
             }
 
             override fun onFailure(call: Call<List<String>>, t: Throwable) {
