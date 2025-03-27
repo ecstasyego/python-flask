@@ -119,9 +119,8 @@ class MainActivity : ComponentActivity() {
         apiService.getData().enqueue(object : Callback<List<String>> {
             override fun onResponse(call: Call<List<String>>, response: Response<List<String>>) {
                 if (response.isSuccessful) {
-                    val posts = response.body()
-                    textView.text = posts.toString()
-                    Log.d("Retrofit", "Response Success: $posts")
+                    textView.text = response.body().toString()
+                    Log.d("Retrofit", "Response Success")
                 } else {
                     Log.e("Retrofit", "Response Error: ${response.code()} - ${response.message()}")
                 }
