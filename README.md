@@ -89,6 +89,7 @@ if __name__ == '__main__':
 package com.example.myapplication
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.TextView
 import androidx.activity.ComponentActivity
 import retrofit2.Call
@@ -99,7 +100,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 
 interface ApiService {
-    @GET("posts")
+    @GET("/")
     fun getData(): Call<List<String>>
 }
 
@@ -110,7 +111,7 @@ class MainActivity : ComponentActivity() {
         setContentView(textView)
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("http://localhost:5000")
+            .baseUrl("http://10.0.2.2:5000/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
@@ -120,10 +121,12 @@ class MainActivity : ComponentActivity() {
                 if (response.isSuccessful) {
                     val posts = response.body()
                     textView.text = posts.toString()
+                    Log.d("Retrofit", "Response Success: $posts")
                 }
             }
 
             override fun onFailure(call: Call<List<String>>, t: Throwable) {
+                Log.e("Retrofit", "API Request Fail: ${t.message}")
             }
         })
 
