@@ -16,10 +16,15 @@ if __name__ == '__main__':
 ## HTTP
 ### bash-curl
 ```bash
+$ curl -X GET 127.0.0.1:5000
 ```
 
 ### python-requests
 ```python
+import requests
+
+response = requests.get("http://127.0.0.1:5000")
+response.json()
 ```
 
 ### kotlin-retrofit2
