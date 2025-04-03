@@ -1,17 +1,4 @@
 # python-flask
-```python
-from flask import Flask, jsonify
-
-app = Flask(__name__)
-
-@app.route('/')
-def hello_world():
-    return jsonify(['Hello, World!'])
-
-if __name__ == '__main__':
-    app.run(debug=True, host='127.0.0.1', port=5000)
-```
-
 
 ## HTTP: HyperText Transfer Protocol
 `REQUEST`
@@ -55,6 +42,19 @@ Further action needs to be taken in order to complete the request.
 The request contains bad syntax or cannot be fulfilled.
 5XX (server error)
 The server failed to fulfill an apparently valid request.
+```
+
+```python
+from flask import Flask, jsonify
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return jsonify(['Hello, World!'])
+
+if __name__ == '__main__':
+    app.run(debug=True, host='127.0.0.1', port=5000)
 ```
 
 
