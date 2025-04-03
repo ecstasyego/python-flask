@@ -48,7 +48,7 @@ The PATCH method requests that the target resource modify its state according to
 ```
 
 
-### RESPONSE: Header + Body
+### RESPONSE: Header & Body
 ```
 1XX (informational)
 The request was received, continuing process.
