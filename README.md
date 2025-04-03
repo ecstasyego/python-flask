@@ -77,8 +77,10 @@ The server failed to fulfill an apparently valid request.
 ```bash
 $ curl [URL(Uniform Resource Locator)]
 $ curl [Scheme://User@Host:Port/Path?Query#Fragment]
-$ curl [Scheme://User@Host:Port/Path?Key1=Value1&Key2=Value2&Key3=Value3#Fragment]
+$ curl [Scheme://User@Host:Port/Path?Key1=Value1&Key2=Value2#Fragment]
+$ curl -X POST -d "Key1=Value1&Key2=Value2" [Scheme://User@Host:Port/Path#Fragment]
 ```
+
 ```bash
 $ curl 127.0.0.1:5000
 $ curl -X GET 127.0.0.1:5000
