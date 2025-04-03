@@ -13,7 +13,20 @@ if __name__ == '__main__':
 ```
 
 
-## HTTP
+## HTTP: HyperText Transfer Protocol
+```
+GET
+HEAD
+POST
+PATCH
+PUT
+DELETE
+TRACE
+CONNECT
+OPTIONS
+```
+
+
 ### bash-curl
 ```bash
 $ curl -X GET 127.0.0.1:5000
