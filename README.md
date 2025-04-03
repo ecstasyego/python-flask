@@ -273,7 +273,7 @@ dependencies {
 
 ### Flask(API) + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy) + CDN(Clouded Cache)
 
-
+### Flask(API) + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy) + CDN(Clouded Cache) + OpenVPN(Security)
 
 <br><br><br>
 
