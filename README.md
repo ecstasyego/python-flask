@@ -246,3 +246,8 @@ dependencies {
     implementation("com.squareup.okhttp3:okhttp:4.9.3")
 }
 ```
+
+## Server
+### Flask(API) + Gunicorn(Mutli-Threading) + Nginx(Proxy)
+
+
