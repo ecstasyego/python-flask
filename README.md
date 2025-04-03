@@ -5,10 +5,11 @@
 $ ifconfig # Private IP
 $ hostname -I # Private IP
 $ curl ifconfig.me # Public IP
-
+```
+```cmd
 # on Windows
-$ ipconfig # Private IP
-$ curl ifconfig.me # Public IP
+> ipconfig # Private IP
+> curl ifconfig.me # Public IP
 ```
 
 `Server`
