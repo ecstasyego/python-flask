@@ -50,6 +50,9 @@ The PATCH method requests that the target resource modify its state according to
 $ curl 127.0.0.1:5000
 $ curl -X GET 127.0.0.1:5000
 $ curl -X POST 127.0.0.1:5000
+$ curl -X PUT 127.0.0.1:5000
+$ curl -X PATCH 127.0.0.1:5000
+$ curl -X OPTIONS 127.0.0.1:5000
 ```
 
 
