@@ -76,6 +76,9 @@ The server failed to fulfill an apparently valid request.
 ### bash-curl
 ```bash
 $ curl -X GET 127.0.0.1:5000
+$ curl -i http://example.com # [header&body]
+$ curl -I http://example.com # [header]
+$ curl -s http://example.com # [body]
 ```
 
 ### bash-wget
