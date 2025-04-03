@@ -78,6 +78,10 @@ The server failed to fulfill an apparently valid request.
 $ curl -X GET 127.0.0.1:5000
 ```
 
+### bash-wget
+```bash
+```
+
 ### python-requests
 ```python
 import requests
