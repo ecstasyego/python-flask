@@ -278,12 +278,16 @@ dependencies {
 <br><br><br>
 
 ## Network
+- Private IP / Public IP
+    - Redirection / Proxy
+
 
 ### Proxy
 #### Forward Proxy 
 #### Reverse Proxy 
 
 
+### Virtual Private Network
 
 
 
