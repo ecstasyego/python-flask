@@ -56,10 +56,11 @@ $ curl -L 127.0.0.1:5000 # --location # [redirection]
 ```bash
 $ curl 127.0.0.1:5000 # [GET]
 $ curl -I 127.0.0.1:5000 # [HEAD]
-$ curl -X GET 127.0.0.1:5000 # [GET]
-$ curl -X POST 127.0.0.1:5000 # [POST]
-$ curl -X PUT 127.0.0.1:5000 # [PUT]
-$ curl -X PATCH 127.0.0.1:5000 # [PATCH]
+$ curl -X GET 127.0.0.1:5000?Key=Value # [GET]: Read
+$ curl -X POST -d "Key=Value" 127.0.0.1:5000 # [POST]: Create, Append
+$ curl -X PUT -d '{"Key":"Value"}' 127.0.0.1:5000 # [PUT]: Update All
+$ curl -X PATCH -d '{"Key":"Value"}' 127.0.0.1:5000 # [PATCH]: Update Partial
+$ curl -X DELETE 127.0.0.1:5000 # [DELETE]: Delete
 $ curl -X OPTIONS 127.0.0.1:5000 # [OPTIONS]
 ```
 
