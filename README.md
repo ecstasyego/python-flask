@@ -1,5 +1,5 @@
 # python-flask
-
+`Server`
 ```python
 from flask import Flask, request, jsonify
 
@@ -7,16 +7,20 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    data = request.get_json()
+    # header = request.headers
+    # body = request.get_json()
 
     print(f"Received request: {request.method} {request.path}")
     print(f"Headers: {request.headers}")
-    print(f"Body: {data}")
 
-    return jsonify(['Hello, World!'])
+    return jsonify(["Hello, World!"])
 
 if __name__ == '__main__':
     app.run(debug=True, host='127.0.0.1', port=5000)
+```
+`Client`
+```bash
+$ curl http://127.0.0.1:5000
 ```
 
 <br><br><br>
