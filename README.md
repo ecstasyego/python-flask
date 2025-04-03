@@ -269,9 +269,9 @@ dependencies {
 
 ### Flask(API) + Gunicorn(Mutli-Threading)
 
-### Flask(API) + Gunicorn(Mutli-Threading) + Nginx(Proxy)
+### Flask(API) + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy)
 
-### Flask(API) + Gunicorn(Mutli-Threading) + Nginx(Proxy) + CDN(Cache)
+### Flask(API) + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy) + CDN(Clouded Cache)
 
 
 
