@@ -25,8 +25,9 @@ $ curl http://127.0.0.1:5000
 
 <br><br><br>
 
-## HTTP: HyperText Transfer Protocol
-### REQUEST
+## Protocols
+### HTTP: HyperText Transfer Protocol
+#### REQUEST
 `Method`
 ```
 GET
@@ -74,7 +75,7 @@ $ curl -X DELETE 127.0.0.1:5000 # [DELETE]: Delete
 $ curl -X OPTIONS 127.0.0.1:5000 # [OPTIONS]
 ```
 
-#### Query String
+##### Query String
 ```bash
 $ curl [URL(Uniform Resource Locator)]
 $ curl [Scheme://User@Host:Port/Path?Query#Fragment]
@@ -85,7 +86,7 @@ $ curl -X POST -d "Key1=Value1&Key2=Value2" [Scheme://User@Host:Port/Path#Fragme
 ```
 
 
-### RESPONSE: Header & Body
+#### RESPONSE: Header & Body
 ```
 1XX (informational)
 The request was received, continuing process.
@@ -108,18 +109,18 @@ The server failed to fulfill an apparently valid request.
 
 <br><br><br>
 
-## Examples
+### Examples
 
-### bash-curl
+#### bash-curl
 ```bash
 ```
 
 
-### bash-wget
+#### bash-wget
 ```bash
 ```
 
-### python-requests
+#### python-requests
 ```python
 import requests
 
@@ -127,8 +128,8 @@ response = requests.get("http://127.0.0.1:5000")
 response.json()
 ```
 
-### kotlin-retrofit2
-#### server
+#### kotlin-retrofit2
+##### server
 ```python
 from flask import Flask, jsonify
 
@@ -142,7 +143,7 @@ if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
 ```
 
-#### on emulator
+##### on emulator
 `file system`
 ```
 .Project
