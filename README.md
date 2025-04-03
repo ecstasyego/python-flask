@@ -47,12 +47,20 @@ PATCH
 The PATCH method requests that the target resource modify its state according to the partial update defined in the representation enclosed in the request. This can save bandwidth by updating a part of a file or document without having to transfer it entirely.
 ```
 ```bash
-$ curl 127.0.0.1:5000
-$ curl -X GET 127.0.0.1:5000
-$ curl -X POST 127.0.0.1:5000
-$ curl -X PUT 127.0.0.1:5000
-$ curl -X PATCH 127.0.0.1:5000
-$ curl -X OPTIONS 127.0.0.1:5000
+$ curl 127.0.0.1:5000 # [body]
+$ curl -i 127.0.0.1:5000 # --include # [header&body]
+$ curl -I 127.0.0.1:5000 # --head # [header]
+$ curl -s 127.0.0.1:5000 # --silent # [body]
+$ curl -L 127.0.0.1:5000 # --location # [redirection]
+```
+```bash
+$ curl 127.0.0.1:5000 # [GET]
+$ curl -I 127.0.0.1:5000 # [HEAD]
+$ curl -X GET 127.0.0.1:5000 # [GET]
+$ curl -X POST 127.0.0.1:5000 # [POST]
+$ curl -X PUT 127.0.0.1:5000 # [PUT]
+$ curl -X PATCH 127.0.0.1:5000 # [PATCH]
+$ curl -X OPTIONS 127.0.0.1:5000 # [OPTIONS]
 ```
 
 
@@ -91,10 +99,6 @@ $ curl -X POST -d "Key1=Value1&Key2=Value2" [Scheme://User@Host:Port/Path#Fragme
 ```
 
 ```bash
-$ curl -i 127.0.0.1:5000 # --include # [header&body]
-$ curl -I 127.0.0.1:5000 # --head # [header]
-$ curl -s 127.0.0.1:5000 # --silent # [body]
-$ curl -L 127.0.0.1:5000 # --location # [redirection]
 ```
 
 
