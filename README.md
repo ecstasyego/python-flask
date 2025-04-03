@@ -1,7 +1,23 @@
 # python-flask
 
+```python
+from flask import Flask, jsonify
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return jsonify(['Hello, World!'])
+
+if __name__ == '__main__':
+    app.run(debug=True, host='127.0.0.1', port=5000)
+```
+
+<br><br><br>
+
 ## HTTP: HyperText Transfer Protocol
-`REQUEST`
+### REQUEST
+`Method`
 ```
 GET
 The GET method requests that the target resource transfer a representation of its state. GET requests should only retrieve data and should have no other effect. (This is also true of some other HTTP methods.) For retrieving resources without making changes, GET is preferred over POST, as they can be addressed through a URL. This enables bookmarking and sharing and makes GET responses eligible for caching, which can save bandwidth. The W3C has published guidance principles on this distinction, saying, "Web application design should be informed by the above principles, but also by the relevant limitations."See safe methods below.
@@ -30,7 +46,9 @@ The TRACE method requests that the target resource transfer the received request
 PATCH
 The PATCH method requests that the target resource modify its state according to the partial update defined in the representation enclosed in the request. This can save bandwidth by updating a part of a file or document without having to transfer it entirely.
 ```
-`RESPONSE`
+
+
+### RESPONSE: Header + Body
 ```
 1XX (informational)
 The request was received, continuing process.
@@ -44,19 +62,12 @@ The request contains bad syntax or cannot be fulfilled.
 The server failed to fulfill an apparently valid request.
 ```
 
-```python
-from flask import Flask, jsonify
 
-app = Flask(__name__)
 
-@app.route('/')
-def hello_world():
-    return jsonify(['Hello, World!'])
 
-if __name__ == '__main__':
-    app.run(debug=True, host='127.0.0.1', port=5000)
-```
 
+
+## Examples
 
 ### bash-curl
 ```bash
