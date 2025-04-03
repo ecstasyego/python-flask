@@ -76,7 +76,7 @@ The server failed to fulfill an apparently valid request.
 ### bash-curl
 ```bash
 $ curl [URL(Uniform Resource Locator)]
-$ curl [Scheme://User@Host:Port/Path?QueryString#Fragment]
+$ curl [Scheme://User@Host:Port/Path?Query#Fragment]
 ```
 ```bash
 $ curl 127.0.0.1:5000
