@@ -248,6 +248,11 @@ dependencies {
 ```
 
 ## Server
+### Flask(API)
+
+### Flask(API) + Gunicorn(Mutli-Threading)
+
 ### Flask(API) + Gunicorn(Mutli-Threading) + Nginx(Proxy)
 
+### Flask(API) + Gunicorn(Mutli-Threading) + Nginx(Proxy) + CDN(Cache)
 
