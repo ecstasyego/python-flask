@@ -1,4 +1,16 @@
 # python-flask
+`IP`
+```bash
+# on Linux
+$ ifconfig # Private IP
+$ hostname -I # Private IP
+$ curl ifconfig.me # Public IP
+
+# on Windows
+$ ipconfig # Private IP
+$ curl ifconfig.me # Public IP
+```
+
 `Server`
 ```python
 from flask import Flask, request, jsonify
