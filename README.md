@@ -46,6 +46,11 @@ The TRACE method requests that the target resource transfer the received request
 PATCH
 The PATCH method requests that the target resource modify its state according to the partial update defined in the representation enclosed in the request. This can save bandwidth by updating a part of a file or document without having to transfer it entirely.
 ```
+```bash
+$ curl 127.0.0.1:5000
+$ curl -X GET 127.0.0.1:5000
+$ curl -X POST 127.0.0.1:5000
+```
 
 
 ### RESPONSE: Header & Body
@@ -82,10 +87,6 @@ $ curl -G -d "Key1=Value1" -d "Key2=Value2" [Scheme://User@Host:Port/Path#Fragme
 $ curl -X POST -d "Key1=Value1&Key2=Value2" [Scheme://User@Host:Port/Path#Fragment]
 ```
 
-```bash
-$ curl 127.0.0.1:5000
-$ curl -X GET 127.0.0.1:5000
-```
 ```bash
 $ curl -i 127.0.0.1:5000 # --include # [header&body]
 $ curl -I 127.0.0.1:5000 # --head # [header]
