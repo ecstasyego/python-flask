@@ -6,7 +6,7 @@ $ ifconfig # Private IP
 $ hostname -I # Private IP
 $ curl ifconfig.me # Public IP
 ```
-```cmd
+```dos
 # on Windows
 > ipconfig # Private IP
 > curl ifconfig.me # Public IP
