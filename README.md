@@ -247,6 +247,10 @@ dependencies {
 }
 ```
 
+
+<br><br><br>
+
+
 ## Server
 ### Flask(API)
 
@@ -255,4 +259,12 @@ dependencies {
 ### Flask(API) + Gunicorn(Mutli-Threading) + Nginx(Proxy)
 
 ### Flask(API) + Gunicorn(Mutli-Threading) + Nginx(Proxy) + CDN(Cache)
+
+
+
+
+<br><br><br>
+
+## IP Address
+
 
