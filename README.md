@@ -63,6 +63,15 @@ $ curl -X PATCH 127.0.0.1:5000 # [PATCH]
 $ curl -X OPTIONS 127.0.0.1:5000 # [OPTIONS]
 ```
 
+#### Query String
+```bash
+$ curl [URL(Uniform Resource Locator)]
+$ curl [Scheme://User@Host:Port/Path?Query#Fragment]
+$ curl [Scheme://User@Host:Port/Path?Key1=Value1&Key2=Value2#Fragment]
+$ curl -G -d "Key1=Value1" -d "Key2=Value2" [Scheme://User@Host:Port/Path#Fragment]
+$ curl -X POST -d "Key1=Value1&Key2=Value2" [Scheme://User@Host:Port/Path#Fragment]
+```
+
 
 ### RESPONSE: Header & Body
 ```
@@ -85,19 +94,11 @@ The server failed to fulfill an apparently valid request.
 
 
 
-
+<br><br><br>
 
 ## Examples
 
 ### bash-curl
-```bash
-$ curl [URL(Uniform Resource Locator)]
-$ curl [Scheme://User@Host:Port/Path?Query#Fragment]
-$ curl [Scheme://User@Host:Port/Path?Key1=Value1&Key2=Value2#Fragment]
-$ curl -G -d "Key1=Value1" -d "Key2=Value2" [Scheme://User@Host:Port/Path#Fragment]
-$ curl -X POST -d "Key1=Value1&Key2=Value2" [Scheme://User@Host:Port/Path#Fragment]
-```
-
 ```bash
 ```
 
