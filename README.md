@@ -75,6 +75,9 @@ The server failed to fulfill an apparently valid request.
 
 ### bash-curl
 ```bash
+$ curl [URL(Uniform Resource Locator)]
+```
+```bash
 $ curl 127.0.0.1:5000
 $ curl -X GET 127.0.0.1:5000
 ```
