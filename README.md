@@ -282,9 +282,9 @@ dependencies {
     - Redirection / Proxy
 
 
-### Proxy
-#### Forward Proxy 
-#### Reverse Proxy 
+### Proxy 
+#### Forward Proxy: Inside to Outside 
+#### Reverse Proxy: Outside to Inside 
 
 
 ### Virtual Private Network
