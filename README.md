@@ -52,12 +52,16 @@ The PATCH method requests that the target resource modify its state according to
 ```
 1XX (informational)
 The request was received, continuing process.
+
 2XX (successful)
 The request was successfully received, understood, and accepted.
+
 3XX (redirection)
 Further action needs to be taken in order to complete the request.
+
 4XX (client error)
 The request contains bad syntax or cannot be fulfilled.
+
 5XX (server error)
 The server failed to fulfill an apparently valid request.
 ```
