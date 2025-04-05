@@ -149,8 +149,12 @@ The server failed to fulfill an apparently valid request.
 ```python
 import requests
 
-response = requests.get("http://127.0.0.1:5000")
-response.json()
+requests.get("http://localhost:5000").json()
+requests.get("http://localhost:5000", params={"Key": "Name"}).json()
+requests.post("http://localhost:5000", data={"Key01": "Value01", "Key02": "Value02"}).json()
+requests.put("http://localhost:5000", json={"Key01": "Value01", "Key02": "Value02"}).json()
+requests.patch("http://localhost:5000", json={"Key01": "Value01", "Key02": "Value02"}).json()
+requests.delete("http://localhost:5000").json()
 ```
 
 #### kotlin-retrofit2
