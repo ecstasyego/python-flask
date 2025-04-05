@@ -150,7 +150,7 @@ The server failed to fulfill an apparently valid request.
 import requests
 
 requests.get("http://localhost:5000").json()
-requests.get("http://localhost:5000", params={"Key": "Name"}).json()
+requests.get("http://localhost:5000", params={"Key": "Name"}).json() # Query String
 requests.post("http://localhost:5000", data={"Key01": "Value01", "Key02": "Value02"}).json()
 requests.put("http://localhost:5000", json={"Key01": "Value01", "Key02": "Value02"}).json()
 requests.patch("http://localhost:5000", json={"Key01": "Value01", "Key02": "Value02"}).json()
