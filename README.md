@@ -1,5 +1,5 @@
 # python-flask
-`IP`
+`IP/SubnetMask`
 ```bash
 # on Linux
 $ ifconfig # Private IP
