@@ -1,17 +1,4 @@
 # python-flask
-`IP/SubnetMask`
-```bash
-# on Linux
-$ ifconfig # Private IP
-$ hostname -I # Private IP
-$ curl ifconfig.me # Public IP
-$ whois [Public IP]
-```
-```dos
-# on Windows
-> ipconfig # Private IP
-> curl ifconfig.me # Public IP
-```
 
 `Server`
 ```python
@@ -36,6 +23,30 @@ if __name__ == '__main__':
 ```bash
 $ curl http://127.0.0.1:5000
 ```
+
+<br><br><br>
+
+## Information Provider(IP)
+### IP
+`IP`
+```bash
+# on Linux
+$ ifconfig # Private IP
+$ hostname -I # Private IP
+$ curl ifconfig.me # Public IP
+$ whois [Public IP]
+```
+```dos
+# on Windows
+> ipconfig # Private IP
+> curl ifconfig.me # Public IP
+```
+
+### Subnet Mask
+```
+[NETWORK].[HOST]/[SUBNETMASK]
+```
+
 
 <br><br><br>
 
