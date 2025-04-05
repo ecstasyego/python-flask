@@ -5,6 +5,7 @@
 $ ifconfig # Private IP
 $ hostname -I # Private IP
 $ curl ifconfig.me # Public IP
+$ whois [Public IP]
 ```
 ```dos
 # on Windows
