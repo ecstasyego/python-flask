@@ -27,6 +27,14 @@ $ curl http://127.0.0.1:5000
 <br><br><br>
 
 ## Information Provider(IP)
+- IANA (Internet Assigned Numbers Authority)
+    - RIRs (Regional Internet Registries)
+        - ISP (Internet Service Provider)
+
+**RIRs (Regional Internet Registries)**
+ARIN (American Registry for Internet Numbers)
+
+
 ### IP
 `IP`
 ```bash
