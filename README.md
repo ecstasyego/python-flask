@@ -32,7 +32,7 @@ from authlib.integrations.flask_client import OAuth
 
 
 
-<br><br><br><br>
+<br><br><br><hr>
 
 `Server`
 ```python
