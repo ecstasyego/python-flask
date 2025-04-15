@@ -32,7 +32,12 @@ $ curl http://127.0.0.1:5000
         - ISP (Internet Service Provider)
 
 **RIRs (Regional Internet Registries)**
-ARIN (American Registry for Internet Numbers)
+- ARIN (American Registry for Internet Numbers)
+- RIPE NCC (Réseaux IP Européens Network Coordination Centre)
+- APNIC (Asia-Pacific Network Information Centre)
+- LACNIC (Latin America and Caribbean Network Information Centre)
+- AFRINIC (African Network Information Centre)
+
 
 
 ### IP
