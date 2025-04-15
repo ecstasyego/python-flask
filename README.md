@@ -19,6 +19,12 @@ from sqlalchemy import Column, Integer, String, DateTime, ForeignKey, Boolean, T
 from sqlalchemy.orm import relationship, backref
 ```
 
+`dash`
+```python
+import dash
+from dash import dcc, html
+```
+
 `wtforms`
 ```python
 from wtforms import StringField, PasswordField, SubmitField, BooleanField
