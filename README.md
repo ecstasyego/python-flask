@@ -47,7 +47,7 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 @app.route('/')
-def root():
+def index():
     # header = request.headers
     # body = request.get_json()
 
