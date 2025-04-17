@@ -344,11 +344,11 @@ dependencies {
 
 ### Flask(API) + Gunicorn(Mutli-Threading)
 
-### Flask(API) + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy)
+### Flask(API) + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy; SSL)
 
-### Flask(API) + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy) + CDN(Clouded Cache)
+### Flask(API) + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy; SSL) + CDN(Clouded Cache)
 
-### Flask(API) + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy) + CDN(Clouded Cache) + OpenVPN(Security)
+### Flask(API) + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy; SSL) + CDN(Clouded Cache) + OpenVPN(Security)
 
 <br><br><br>
 
