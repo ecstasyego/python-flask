@@ -144,8 +144,8 @@ $ curl -s 127.0.0.1:5000 # --silent # [body]
 $ curl -L 127.0.0.1:5000 # --location # [redirection]
 ```
 ```bash
-$ curl 127.0.0.1:5000 # [GET]
-$ curl -I 127.0.0.1:5000 # [HEAD]
+$ curl 127.0.0.1:5000 # [GET|BODY]
+$ curl -I 127.0.0.1:5000 # [GET|HEADER]
 $ curl -X GET 127.0.0.1:5000?Key=Value # [GET]: Read
 $ curl -X POST -d "Key=Value" 127.0.0.1:5000 # [POST]: Create, Append
 $ curl -X PUT -d '{"Key":"Value"}' 127.0.0.1:5000 # [PUT]: Update All
