@@ -338,7 +338,7 @@ dependencies {
 <br><br><br>
 
 
-## Server
+## WSGI(Web Server Gateway Interface)
 ### Flask(API)
 
 ### Flask(API) + Gunicorn(Mutli-Threading)
