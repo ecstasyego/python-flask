@@ -344,40 +344,37 @@ dependencies {
 <br><br><br>
 
 # SERVER
+
+- WSGI(Web Server Gateway Interface)
+    - Flask(API)
+    - Flask(API) + Gunicorn(Mutli-Threading)
+    - Flask(API) + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy; SSL)
+    - Flask(API) + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy; SSL) + CDN(Clouded Cache)
+    - Flask(API) + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy; SSL) + CDN(Clouded Cache) + OpenVPN(Security)
+- ASGI(Asynchronous Server Gateway Interface)
+    - FastAPI + [Uvicorn|Hypercorn|Daphne]
+    - FastAPI + [Uvicorn|Hypercorn|Daphne] + Gunicorn(Mutli-Threading)
+    - FastAPI + [Uvicorn|Hypercorn|Daphne] + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy)
+    - FastAPI + [Uvicorn|Hypercorn|Daphne] + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy) + CDN(Clouded Cache)
+    - FastAPI + [Uvicorn|Hypercorn|Daphne] + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy) + CDN(Clouded Cache) + OpenVPN(Security)
+
 `Development`
 ```bash
-$ 
+$ python script.py
 ```
 
 `Production(WSGI):gunicorn`
 ```bash
-$ 
+$ gunicorn -k uvicorn.workers.UvicornWorker script:asgi_app
 ```
 
 `Production(ASGI):uvicorn`
 ```bash
-$ 
+$ uvicorn script:asgi_app
 ```
 
 
 
-<br><br><br>
-
-## WSGI(Web Server Gateway Interface)
-### Flask(API)
-### Flask(API) + Gunicorn(Mutli-Threading)
-### Flask(API) + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy; SSL)
-### Flask(API) + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy; SSL) + CDN(Clouded Cache)
-### Flask(API) + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy; SSL) + CDN(Clouded Cache) + OpenVPN(Security)
-
-<br><br><br>
-
-## ASGI(Asynchronous Server Gateway Interface)
-### FastAPI + [Uvicorn|Hypercorn|Daphne]
-### FastAPI + [Uvicorn|Hypercorn|Daphne] + Gunicorn(Mutli-Threading)
-### FastAPI + [Uvicorn|Hypercorn|Daphne] + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy)
-### FastAPI + [Uvicorn|Hypercorn|Daphne] + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy) + CDN(Clouded Cache)
-### FastAPI + [Uvicorn|Hypercorn|Daphne] + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy) + CDN(Clouded Cache) + OpenVPN(Security)
 
 
 <br><br><br>
