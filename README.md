@@ -462,6 +462,7 @@ $ uvicorn script:app
 ```
 ```bash
 $ gunicorn -k uvicorn.workers.UvicornWorker script:app
+$ PYTHONPATH=/~/~/~/lib/python3.12/site-packages gunicorn -k uvicorn.workers.UvicornWorker script:app
 ```
 
 
