@@ -480,14 +480,16 @@ $ PYTHONPATH=/~/~/~/lib/python3.12/site-packages gunicorn -k uvicorn.workers.Uvi
 - Private IP / Public IP
     - Redirection / Proxy
 
-### Nginx: Proxy 
-#### Forward Proxy: Inside to Outside 
-#### Reverse Proxy: Outside to Inside 
+### Proxy  
+#### Nginx Forward Proxy: Inside to Outside 
+#### Nginx Reverse Proxy: Outside to Inside 
 
-### Certbot: HTTPs
+### HTTPs 
+#### Certbot
 
-### WireGuard: Virtual Private Network(VPN)
 
-
+### Virtual Private Network(VPN)
+#### WireGuard
+#### OpenVPN
 
 
