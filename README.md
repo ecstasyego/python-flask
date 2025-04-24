@@ -419,6 +419,36 @@ $ gunicorn -k uvicorn.workers.UvicornWorker script:app
 
 `script.py`
 ```python
+from fastapi import FastAPI
+from flask import Flask
+from asgiref.wsgi import WsgiToAsgi
+from starlette.middleware.wsgi import WSGIMiddleware
+
+
+
+# Flask Application
+flask_app = Flask(__name__)
+
+@flask_app.route("/")
+def flaskAPI():
+    return "Hello from Flask!"
+
+
+
+# FastAPI Application
+fastapi_app = FastAPI()
+
+@fastapi_app.get("/fastapi")
+def fastapiAPI():
+    return {"message": "Hello from FastAPI"}
+
+
+
+# Integration: fastapi_app + flask_app
+fastapi_app.mount("/", WSGIMiddleware(flask_app))
+
+# Main Application
+app = fastapi_app
 ```
 
 `Production(WSGI):gunicorn`
