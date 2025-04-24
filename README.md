@@ -358,10 +358,33 @@ dependencies {
     - FastAPI + [Uvicorn|Hypercorn|Daphne] + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy) + CDN(Clouded Cache)
     - FastAPI + [Uvicorn|Hypercorn|Daphne] + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy) + CDN(Clouded Cache) + OpenVPN(Security)
 
-`Development`
+
+### Flask Server
+`script.py`
+```python
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello():
+    return 'Hello from Flask!'
+
+if __name__ == "__main__":
+    app.run(debug=True)
+```
+`Server: Development`
 ```bash
 $ python script.py
 ```
+`Server: Production`
+```bash
+$ gunicorn script:app
+```
+
+
+
+
 
 `Production(WSGI):gunicorn`
 ```bash
