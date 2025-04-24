@@ -360,8 +360,10 @@ dependencies {
     - FastAPI + [Uvicorn|Hypercorn|Daphne] + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy) + CDN(Clouded Cache)
     - FastAPI + [Uvicorn|Hypercorn|Daphne] + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy) + CDN(Clouded Cache) + OpenVPN(Security)
 
+### Automation: systemd
 
-### Flask
+
+#### Flask
 `script.py`
 ```python
 from flask import Flask
@@ -388,7 +390,7 @@ $ gunicorn script:app
 
 <br>
 
-### FastAPI
+#### FastAPI
 
 `script.py`
 ```python
@@ -417,7 +419,7 @@ $ gunicorn -k uvicorn.workers.UvicornWorker script:app
 
 <br>
 
-### Flask + FastAPI
+#### Flask + FastAPI
 
 `script.py`
 ```python
@@ -482,9 +484,9 @@ $ PYTHONPATH=/~/~/~/lib/python3.12/site-packages gunicorn -k uvicorn.workers.Uvi
 #### Forward Proxy: Inside to Outside 
 #### Reverse Proxy: Outside to Inside 
 
+### Certbot: HTTPs
 
 ### Virtual Private Network
-
 
 
 
