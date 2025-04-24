@@ -13,6 +13,11 @@ from flask_restful import Api, Resource, reqparse
 from flask_jwt_extended import JWTManager, create_access_token, jwt_required, get_jwt_identity
 ```
 
+`fastapi`
+```python
+from fastapi import FastAPI
+```
+
 `sqlalchemy`
 ```python
 from sqlalchemy import Column, Integer, String, DateTime, ForeignKey, Boolean, Text
@@ -23,11 +28,6 @@ from sqlalchemy.orm import relationship, backref
 ```python
 import dash
 from dash import dcc, html
-```
-
-`fastapi`
-```python
-from fastapi import FastAPI
 ```
 
 `wtforms`
