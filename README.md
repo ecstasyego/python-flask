@@ -487,6 +487,8 @@ $ PYTHONPATH=/~/~/~/lib/python3.12/site-packages gunicorn -k uvicorn.workers.Uvi
 ### HTTPs 
 #### Certbot
 
+### CDN(Clouded Cache)
+#### varnish
 
 ### Virtual Private Network(VPN)
 #### WireGuard
