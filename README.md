@@ -451,17 +451,17 @@ fastapi_app.mount("/", WSGIMiddleware(flask_app))
 app = fastapi_app
 ```
 
-`Production(WSGI):gunicorn`
+- **Server: Development**
 ```bash
-$ gunicorn -k uvicorn.workers.UvicornWorker script:asgi_app
+$ uvicorn sciprt:app --reload
 ```
 
-<br>
-
-
-`Production(ASGI):uvicorn`
+- **Server: Production**
 ```bash
-$ uvicorn script:asgi_app
+$ uvicorn script:app
+```
+```bash
+$ gunicorn -k uvicorn.workers.UvicornWorker script:app
 ```
 
 
