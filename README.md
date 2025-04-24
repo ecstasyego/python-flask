@@ -25,6 +25,11 @@ import dash
 from dash import dcc, html
 ```
 
+`fastapi`
+```python
+from fastapi import FastAPI
+```
+
 `wtforms`
 ```python
 from wtforms import StringField, PasswordField, SubmitField, BooleanField
