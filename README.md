@@ -373,10 +373,12 @@ def hello():
 if __name__ == "__main__":
     app.run(debug=True)
 ```
+
 `Server: Development`
 ```bash
 $ python script.py
 ```
+
 `Server: Production`
 ```bash
 $ gunicorn script:app
@@ -397,6 +399,19 @@ def index():
     return {"message": "Hello, FastAPI!"}
 ```
 
+`Server: Development`
+```bash
+$ uvicorn script:app --reload
+```
+
+`Server: Production`
+```bash
+$ uvicorn script:app
+```
+```bash
+$ gunicorn -k uvicorn.workers.UvicornWorker script:app
+```
+
 
 <br>
 
@@ -410,7 +425,6 @@ def index():
 ```bash
 $ gunicorn -k uvicorn.workers.UvicornWorker script:asgi_app
 ```
-
 
 <br>
 
