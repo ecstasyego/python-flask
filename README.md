@@ -382,7 +382,7 @@ $ python script.py
 $ gunicorn script:app
 ```
 
-
+<br>
 
 
 
@@ -390,6 +390,10 @@ $ gunicorn script:app
 ```bash
 $ gunicorn -k uvicorn.workers.UvicornWorker script:asgi_app
 ```
+
+
+<br>
+
 
 `Production(ASGI):uvicorn`
 ```bash
