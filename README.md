@@ -345,6 +345,8 @@ dependencies {
 
 # SERVER
 
+## Application
+
 - WSGI(Web Server Gateway Interface)
     - Flask(API)
     - Flask(API) + Gunicorn(Mutli-Threading)
@@ -476,8 +478,7 @@ $ PYTHONPATH=/~/~/~/lib/python3.12/site-packages gunicorn -k uvicorn.workers.Uvi
 - Private IP / Public IP
     - Redirection / Proxy
 
-
-### Proxy 
+### Nginx: Proxy 
 #### Forward Proxy: Inside to Outside 
 #### Reverse Proxy: Outside to Inside 
 
