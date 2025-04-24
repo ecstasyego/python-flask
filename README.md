@@ -343,19 +343,45 @@ dependencies {
 
 <br><br><br>
 
+# SERVER
+`Development`
+```bash
+$ 
+```
+
+`Production:gunicorn`
+```bash
+$ 
+```
+
+`Production:uvicorn`
+```bash
+$ 
+```
+
+
+
+<br><br><br>
 
 ## WSGI(Web Server Gateway Interface)
 ### Flask(API)
-
 ### Flask(API) + Gunicorn(Mutli-Threading)
-
 ### Flask(API) + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy; SSL)
-
 ### Flask(API) + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy; SSL) + CDN(Clouded Cache)
-
 ### Flask(API) + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy; SSL) + CDN(Clouded Cache) + OpenVPN(Security)
 
 <br><br><br>
+
+## ASGI(Asynchronous Server Gateway Interface)
+### FastAPI + [Uvicorn|Hypercorn|Daphne]
+### FastAPI + [Uvicorn|Hypercorn|Daphne] + Gunicorn(Mutli-Threading)
+### FastAPI + [Uvicorn|Hypercorn|Daphne] + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy)
+### FastAPI + [Uvicorn|Hypercorn|Daphne] + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy) + CDN(Clouded Cache)
+### FastAPI + [Uvicorn|Hypercorn|Daphne] + Gunicorn(Mutli-Threading) + Nginx(Reverse Proxy) + CDN(Clouded Cache) + OpenVPN(Security)
+
+
+<br><br><br>
+
 
 ## Network
 - Private IP / Public IP
