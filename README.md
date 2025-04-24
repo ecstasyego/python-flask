@@ -349,12 +349,12 @@ dependencies {
 $ 
 ```
 
-`Production:gunicorn`
+`Production(WSGI):gunicorn`
 ```bash
 $ 
 ```
 
-`Production:uvicorn`
+`Production(ASGI):uvicorn`
 ```bash
 $ 
 ```
