@@ -388,6 +388,14 @@ $ python script.py
 $ gunicorn script:app
 ```
 
+
+<br>
+
+
+#### Dash
+```python
+```
+
 <br>
 
 #### FastAPI
@@ -416,6 +424,12 @@ $ uvicorn script:app
 $ gunicorn -k uvicorn.workers.UvicornWorker script:app
 ```
 
+<br>
+
+#### Flask + Dash
+
+```python
+```
 
 <br>
 
@@ -470,6 +484,68 @@ $ PYTHONPATH=/~/~/~/lib/python3.12/site-packages gunicorn -k uvicorn.workers.Uvi
 ```
 
 
+<br>
+
+
+#### Flask + Dash + FastAPI
+
+`script.py`
+```python
+from dash import Dash, html
+from fastapi import FastAPI
+from flask import Flask
+from asgiref.wsgi import WsgiToAsgi
+from starlette.middleware.wsgi import WSGIMiddleware
+
+
+
+# Flask Application
+flask_app = Flask(__name__)
+
+@flask_app.route("/")
+def flaskAPI():
+    return "Hello from Flask!"
+
+
+
+# Dash Application
+dash_app = Dash(__name__, server=flask_app, url_base_pathname="/dash/")
+dash_app.layout = html.Div([
+    html.H1("Hello from Dash!"),
+    html.P("This is a Dash app running under Flask.")
+])
+
+
+
+# FastAPI Application
+fastapi_app = FastAPI()
+
+@fastapi_app.get("/fastapi")
+def fastapiAPI():
+    return {"message": "Hello from FastAPI"}
+
+
+
+# Integration: fastapi_app + flask_app
+fastapi_app.mount("/", WSGIMiddleware(flask_app))
+
+# Main Application
+app = fastapi_app
+```
+
+- **Server: Development**
+```bash
+$ uvicorn sciprt:app --reload
+```
+
+- **Server: Production**
+```bash
+$ uvicorn script:app
+```
+```bash
+$ gunicorn -k uvicorn.workers.UvicornWorker script:app
+$ PYTHONPATH=/~/~/~/lib/python3.12/site-packages gunicorn -k uvicorn.workers.UvicornWorker script:app
+```
 
 
 
