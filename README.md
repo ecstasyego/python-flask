@@ -387,6 +387,7 @@ $ python script.py
 ```bash
 $ gunicorn script:app
 $ gunicorn script:app -b 0.0.0.0:8050
+$ gunicorn script:app -b 0.0.0.0:8050 -w 4
 ```
 
 
@@ -419,6 +420,7 @@ $ python script.py
 ```bash
 $ gunicorn script:server
 $ gunicorn script:server -b 0.0.0.0:8000
+$ gunicorn script:server -b 0.0.0.0:8000 -w 4
 ```
 
 <br>
