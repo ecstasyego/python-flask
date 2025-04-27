@@ -497,6 +497,7 @@ $ python script.py
 $ gunicorn script:flask_app
 $ gunicorn script:flask_app -b 0.0.0.0:5000
 $ gunicorn script:flask_app -b 0.0.0.0:5000 -w 4
+$ gunicorn script:flask_app --bind 0.0.0.0:5000 --workers 4
 ```
 
 <br>
