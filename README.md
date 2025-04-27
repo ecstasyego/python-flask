@@ -418,7 +418,7 @@ $ python script.py
 - **Server: Production**
 ```bash
 $ gunicorn script:server
-$ gunicorn script:server -b 0.0.0.0:8050
+$ gunicorn script:server -b 0.0.0.0:8000
 ```
 
 <br>
