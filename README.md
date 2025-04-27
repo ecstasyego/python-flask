@@ -386,6 +386,7 @@ $ python script.py
 - **Server: Production**
 ```bash
 $ gunicorn script:app
+$ gunicorn script:app -b 0.0.0.0:8050
 ```
 
 
