@@ -513,7 +513,7 @@ dash_app = Dash(__name__, server=flask_app, url_base_pathname="/dash/")
 dash_app.layout = html.Div([
     html.H1("Hello from Dash!"),
     html.P("This is a Dash app running under Flask.")
-])
+]) # Integration: dash_app + flask_app
 
 
 
