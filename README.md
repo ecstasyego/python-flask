@@ -393,6 +393,8 @@ $ gunicorn script:app
 
 
 #### Dash
+
+`script.py`
 ```python
 ```
 
@@ -428,6 +430,7 @@ $ gunicorn -k uvicorn.workers.UvicornWorker script:app
 
 #### Flask + Dash
 
+`script.py`
 ```python
 ```
 
