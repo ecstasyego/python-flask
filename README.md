@@ -446,6 +446,8 @@ $ uvicorn script:app --reload
 - **Server: Production**
 ```bash
 $ uvicorn script:app
+$ uvicorn script:app --host 0.0.0.0 --port 8000
+$ uvicorn script:app --host 0.0.0.0 --port 8000 --workers 4
 ```
 ```bash
 $ gunicorn -k uvicorn.workers.UvicornWorker script:app
