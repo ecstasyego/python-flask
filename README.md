@@ -388,6 +388,7 @@ $ python script.py
 $ gunicorn script:app
 $ gunicorn script:app -b 0.0.0.0:8050
 $ gunicorn script:app -b 0.0.0.0:8050 -w 4
+$ gunicorn script:app --bind 0.0.0.0:8050 --workers 4
 ```
 
 
