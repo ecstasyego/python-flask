@@ -422,6 +422,7 @@ $ python script.py
 $ gunicorn script:server
 $ gunicorn script:server -b 0.0.0.0:8000
 $ gunicorn script:server -b 0.0.0.0:8000 -w 4
+$ gunicorn script:server --bind 0.0.0.0:8000 --workers 4
 ```
 
 <br>
@@ -452,6 +453,9 @@ $ uvicorn script:app --host 0.0.0.0 --port 8000 --workers 4
 ```
 ```bash
 $ gunicorn -k uvicorn.workers.UvicornWorker script:app
+$ gunicorn -k uvicorn.workers.UvicornWorker script:app -b 0.0.0.0:8000
+$ gunicorn -k uvicorn.workers.UvicornWorker script:app -b 0.0.0.0:8000 -w 4
+$ gunicorn -k uvicorn.workers.UvicornWorker script:app --bind 0.0.0.0:8000 --workers 4
 ```
 
 <br>
