@@ -385,7 +385,6 @@ $ python script.py
 
 - **Server: Production**
 ```bash
-$ gunicorn script:app
 ```
 
 
@@ -396,6 +395,16 @@ $ gunicorn script:app
 
 `script.py`
 ```python
+```
+
+- **Server: Development**
+```bash
+$ python script.py
+```
+
+- **Server: Production**
+```bash
+$ gunicorn script:app
 ```
 
 <br>
