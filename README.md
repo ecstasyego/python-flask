@@ -396,6 +396,17 @@ $ gunicorn script:app
 
 `script.py`
 ```python
+import dash
+from dash import dcc, html
+
+app = dash.Dash(__name__)
+app.title = "APP PAGE TITLE"
+app.layout = html.Div("Hello, world!")
+
+server = app.server # Gunicorn
+
+if __name__ == '__main__':
+    app.run(debug=True)
 ```
 
 - **Server: Development**
@@ -405,6 +416,8 @@ $ python script.py
 
 - **Server: Production**
 ```bash
+$ gunicorn script:server
+$ gunicorn script:server -b 0.0.0.0:8050
 ```
 
 <br>
