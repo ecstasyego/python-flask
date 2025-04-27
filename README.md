@@ -460,6 +460,7 @@ $ gunicorn -k uvicorn.workers.UvicornWorker script:app
 from dash import Dash, html
 from flask import Flask
 
+
 # Flask Application
 flask_app = Flask(__name__)
 
@@ -473,6 +474,10 @@ dash_app.layout = html.Div([
     html.H1("Hello from Dash!"),
     html.P("This is a Dash app running under Flask.")
 ]) # Integration: dash_app + flask_app
+
+
+if __name__ == "__main__":
+    flask_app.run(debug=True)
 ```
 
 - **Server: Development**
@@ -483,8 +488,8 @@ $ python script.py
 - **Server: Production**
 ```bash
 $ gunicorn script:flask_app
-$ gunicorn script:flask_app -b 0.0.0.0:8000
-$ gunicorn script:flask_app -b 0.0.0.0:8000 -w 4
+$ gunicorn script:flask_app -b 0.0.0.0:5000
+$ gunicorn script:flask_app -b 0.0.0.0:5000 -w 4
 ```
 
 <br>
