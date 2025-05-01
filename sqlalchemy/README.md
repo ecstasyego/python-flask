@@ -30,9 +30,10 @@ class Table02(Base):
     column01 = Column(String)
     column02 = Column(Integer)
 
-
+# CREATE
 Base.metadata.create_all(engine)
 
+# DB Session
 Session = sessionmaker(bind=engine)
 session = Session()
 
