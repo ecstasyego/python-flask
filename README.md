@@ -633,7 +633,12 @@ $ sudo lshw -c network
 
 `/etc/netplan/00-installer-config.yaml`
 ```yaml
-
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    [Logical Name]:
+      dhcp4: true
 ```
 ```bash
 $ sudo netplan apply
