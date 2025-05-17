@@ -625,6 +625,21 @@ $ PYTHONPATH=/~/~/~/lib/python3.12/site-packages gunicorn -k uvicorn.workers.Uvi
 - Private IP / Public IP
     - Redirection / Proxy
 
+### LAN
+`Logical Name`
+```bash
+$ sudo lshw -c network
+```
+
+`/etc/netplan/00-installer-config.yaml`
+```yaml
+
+```
+```bash
+$ sudo netplan apply
+```
+
+
 ### Proxy  
 #### Nginx Forward Proxy: Inside to Outside 
 #### Nginx Reverse Proxy: Outside to Inside 
